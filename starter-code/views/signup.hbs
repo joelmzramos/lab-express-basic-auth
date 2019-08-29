@@ -1,0 +1,10 @@
+<form action="/signup" method="post">
+  <label for="username">Usuário:</label>
+  <input type="text" name="username" id="username" placeholder="Digite seu usuário">
+  <label for="password">Senha:</label>
+  <input type="password" name="password" id="password" placeholder="Digite sua senha">  
+  <button type="submit">Cadastrar</button>
+  {{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+  {{/if}}
+</form>
